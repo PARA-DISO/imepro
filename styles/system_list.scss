@@ -1,0 +1,16 @@
+.system_requirements_list {
+  list-style: none;
+  padding: 0;
+  li {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px dotted black;
+    // position: relative;
+    &::before {
+      content: attr(data-list-name);
+      display: flex;
+      align-items: center;
+      width: 6em;
+    }
+  }
+}

@@ -1,0 +1,1 @@
+import{f as n,o,c as t,F as c,a as e}from"./recentry_news.f81ae7c7.js";const s={},a=e("h2",null,"PAGE NOT FOUND",-1),r=e("p",null," \u30DA\u30FC\u30B8\u304C\u898B\u3064\u304B\u308A\u307E\u305B\u3093\u3067\u3057\u305F ",-1);function _(l,f){return o(),t(c,null,[a,r],64)}const u=n(s,[["render",_]]);export{u as default};

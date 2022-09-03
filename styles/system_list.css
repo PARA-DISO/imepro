@@ -1,0 +1,15 @@
+.system_requirements_list {
+  list-style: none;
+  padding: 0;
+}
+.system_requirements_list li {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px dotted black;
+}
+.system_requirements_list li::before {
+  content: attr(data-list-name);
+  display: flex;
+  align-items: center;
+  width: 6em;
+}/*# sourceMappingURL=system_list.css.map */

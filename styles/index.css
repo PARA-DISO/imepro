@@ -1,0 +1,48 @@
+.hero {
+  width: 100%;
+  display: flex;
+}
+.hero > img {
+  width: 50%;
+}
+.hero > div {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero > div > :is(h1, div) {
+  text-align: center;
+  width: 100%;
+}
+.hero > div > h1 {
+  font-size: 4rem;
+  margin: 0;
+}
+.hero > div > div {
+  font-size: 2rem;
+}
+
+main {
+  margin-top: 400px;
+}
+
+#supported_formats article > section > h3 {
+  margin: 30px 0 30px -2em;
+}
+
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero > img, .hero > div {
+    width: 100%;
+  }
+  main {
+    margin-top: 200px;
+  }
+  #supported_formats article > section > h3 {
+    margin: 30px 0 30px 0;
+  }
+}/*# sourceMappingURL=index.css.map */
