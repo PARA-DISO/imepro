@@ -1,0 +1,1 @@
+import{_ as e,o as s,a as t,d as o}from"./footer.js";const c="/imepro/icon.svg",_={},n={href:"/imepro/"},r=o("img",{src:c,alt:"\u3044\u3081\u3077\u308D logo"},null,-1),a=o("h1",null,"\u3044\u3081\u30FC\u3058\u3077\u308D\u305B\u3063\u3055\u30FC",-1),i=[r,a];function d(l,m){return s(),t("a",n,i)}const p=e(_,[["render",d]]);export{p as H};

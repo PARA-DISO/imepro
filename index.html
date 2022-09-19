@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <!-- META DATA -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Security-Policy"
+          content="default-src 'self';
+                   child-src 'none';
+                   style-src-attr 'none';
+                   font-src https://fonts.gstatic.com/;" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+          content="画像処理アプリケーション「いめーじぷろせっさー」のぺーじ" />
+    <!-- FAVICON -->
+    <link rel="icon" type="image/svg+xml" href="/imepro/icon.svg" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/imepro/styles/fonts/fonts.min.css" />
+    <link rel="stylesheet" href="/imepro/styles/base.min.css" />
+    <link rel="stylesheet" href="/imepro/styles/index.min.css" />
+    <link rel="stylesheet" href="/imepro/styles/footer.min.css" />
+    <link rel="stylesheet" href="/imepro/styles/anchor_list.min.css" />
+    <link rel="stylesheet" href="/imepro/styles/fadein.min.css" />
+    <!-- page title -->
+    <title>いめーじぷろせっさー</title>
+    <!-- SCRIPTS -->
+    <script async src="/imepro/script/fadein.js"></script>
+    
+    <script async type="module" crossorigin src="/imepro/assets/mian.js"></script>
+    <link rel="modulepreload" crossorigin href="/imepro/assets/footer.js">
+    <link rel="modulepreload" crossorigin href="/imepro/assets/function_list.js">
+    <link rel="modulepreload" crossorigin href="/imepro/assets/recentry_news.js">
+  </head>
+  <body>
+    <header>
+      <!-- NAVIGATION BAR WITH MENU ICON -->
+      <div id="navigation"></div>
+      <!-- HERO HEADER -->
+      <div class="hero">
+        <img src="/imepro/hero.webp" alt="いめぷろスクショ">
+        <div>
+          <h1>いめーじ<wbr />ぷろせっさー v2</h1>
+          <div>NOW DEVELOPING!</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- ABOUT SECTION -->
+      <section id="about_section" class="fadein_target">
+        <h2>
+          いめーじぷろせっさー
+          <div>version 2.0</div>
+        </h2>
+        <article>
+          v1からいろいろ一新した「いめぷろ」。<br />
+          バックエンドはc++からRust、プラットフォームはElectronからTauri、GUIの実装も素のHTMLからvue.jsを使ったものへと大幅な変更を行った。 <br>
+          画像処理においてもOpenCVから自前実装へと大幅に手を加えた物となっている。 <br>
+          だからと言って良くなったかは分からん。コードの管理はしやすくなった。
+          <br>
+          もともとはGimpより起動が速く、画像処理がいろいろできるというのを目標にスタートしたモノ。
+        </article>
+      </section>
+      <!-- NEW FEATURE -->
+      <section id="new_feature" class="fadein_target">
+        <h2>新機能</h2>
+        <article>
+          <section>
+            <h3>Process Queue</h3>
+            <div class="images">
+              <img src="/imepro/queue_screenshot.webp" alt="Queue機能のスクリーンショット" />
+            </div>
+            <p>
+              やりたい処理を複数個Queueに追加することで複数の処理を実行した結果をプレビューで見ることができる。
+            </p>
+          </section>
+        </article>
+      </section>
+      <!-- NEWS SECTION -->
+      <section id="news_section" class="fadein_target">
+        <h2>NEWS</h2>
+        <article id="news_contents"></article>
+      </section>
+      <!-- FUNCTION SECTION -->
+      <section id="function_section" class="fadein_target">
+        <h2>画像処理一覧</h2>
+        <article id="functions"></article>
+      </section>
+      <!-- SUPPORTED FORMATS -->
+      <section id="supported_formats" class="fadein_target">
+        <h2>対応画像ファイル</h2>
+        <article>
+          <!-- extensions -->
+          <section>
+            <h3>画像ファイルフォーマット</h3>
+            <article>
+              <ul class="support_formats_list list">
+                <li data-list-name="PNG Image">
+                  .png
+                </li>
+                <li data-list-name="JPEG Formats">.jpg .jpeg .jfif</li>
+              </ul>
+            </article>
+          </section>
+          <!-- color formats -->
+          <section>
+            <h3>カラーフォーマット</h3>
+            <article>
+              <h4>入力画像</h4>
+              <ul class="support_formats_list list">
+                <li data-list-name="PNG Image">
+                  Gray Scale, RGB or RGBA
+                </li>
+                <li data-list-name="JPEG Formats">Gray Scale or RGB</li>
+              </ul>
+              <h4>出力画像</h4>
+              <ul class="support_formats_list list">
+                <li data-list-name="PNG Image">
+                  RGBA
+                </li>
+                <li data-list-name="JPEG Formats">RGB</li>
+              </ul>
+            </article>
+          </section>
+        </article>
+      </section>
+      <!-- SYSTEM REQUIREMENTS-->
+      <section id="system_requirements_section" class="fadein_target">
+        <h2>システム要件</h2>
+        <article>
+          <ul class="system_requirements_list list">
+            <li data-list-name="OS">
+              Windows10 / 11 <br>
+              (Ubuntuへの対応も検討中)
+            </li>
+            <li data-list-name="CPU">
+              x64系のCPU(intelまたはAMDのCPU) <br>
+              拡張命令は未調査
+            </li>
+            <li data-list-name="MEMORY">
+              OSが動作する量
+            </li>
+            <li data-list-name="DISPLAY">
+              HD(1280x720)以上、FullHD(1920x1080)以上が望ましい
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+    <!-- FOOTER -->
+    <footer id="footer"></footer>
+  </body>
+</html>

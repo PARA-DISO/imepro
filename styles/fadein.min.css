@@ -1,0 +1,2 @@
+.fadein_shown{-webkit-animation:fadein 1s ease-in-out 1 forwards;animation:fadein 1s ease-in-out 1 forwards}.fadein_target{opacity:0}@-webkit-keyframes fadein{0%{opacity:0;transform:translateY(25vh)}100%{opacity:1;transform:translateY(0)}}@keyframes fadein{0%{opacity:0;transform:translateY(25vh)}100%{opacity:1;transform:translateY(0)}}
+/*# sourceMappingURL=fadein.min.css.map */

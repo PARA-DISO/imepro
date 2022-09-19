@@ -1,0 +1,7 @@
+*.png
+*.sh
+*.txt
+*.css
+*.scss
+!*.min.css
+*.min.css.map

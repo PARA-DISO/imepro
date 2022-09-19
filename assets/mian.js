@@ -1,0 +1,1 @@
+import{c as o,M as n,F as s}from"./footer.js";import{_ as t}from"./function_list.js";import{_ as a}from"./recentry_news.js";o(n).mount("#navigation");o(s).mount("#footer");o(t,{display_size:-1}).mount("#functions");o(a,{page:0,display_size:10}).mount("#news_contents");
