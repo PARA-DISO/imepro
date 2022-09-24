@@ -2,6 +2,7 @@
 *.sh
 *.txt
 *.css
+*.css.map
 *.scss
 !*.min.css
-*.min.css.map
+!*.min.css.map

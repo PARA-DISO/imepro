@@ -16,6 +16,6 @@
     <use x='2' y='12' xlink:href='#g1-9252' fill="#fafdff" />
     <use x='15' y='12' xlink:href='#g1-9313' fill="#fafdff" />
     <use x='2' y='27' xlink:href='#g1-9303' fill="#fafdff" />
-    <use x='15' y='27' xlink:href=' #g1-9325' fill="#fafdff" />
+    <use x='15' y='27' xlink:href='#g1-9325' fill="#fafdff" />
   </g>
 </svg>
